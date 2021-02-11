@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Caveat,sens-serif;
+}
+
+body{
+    background-color : #2B2B2B ;
+    font-family:  sans-serif;
+}
+
+.heading{
+    text-align: center;
+    font-family: Pangolin ,sens-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    background: #E86400;
+    padding: 20px;
+}
+.score-board span{
+    display: inline-block;
+}
+
+.win{
+    transition: all .3s ease;
+    background: seagreen;
+    box-shadow: 0px 0px 10px #07A3E9;
+}
+.lost{
+    transition: all .3s ease;
+    background: darkred;
+    box-shadow: 0px 0px 10px #07A3E9;
+}
+
+
+.tie{
+    transition: all .3s ease;
+    background: darkgray;
+    box-shadow: 0px 0px 10px #07A3E9;
+}
+
+.score-board{
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+    border: #feffff solid 3px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 50px;
+
+}
+.badge{
+    font-size: 20px;
+    text-align: center;
+    background-color:#07A3E9 ;
+    margin: 5px auto;
+    width: 60px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+}
+#user-badge{
+    left: -35px;
+}
+
+#com-badge{
+    right: -35px;
+}
+
+.result{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.choices{
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+}
+.choices div{
+    display: inline-block;
+    margin: 20px 20px;
+}
+.choices img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+.choices img:hover{
+    transform: scale(1.2);
+}
+
+#action-message{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 200;
+}
